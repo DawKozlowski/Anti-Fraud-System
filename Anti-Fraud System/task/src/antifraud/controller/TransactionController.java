@@ -23,7 +23,7 @@ public class TransactionController {
     @PreAuthorize("hasRole('MERCHANT')")
     @PostMapping
     ResultResponse post(@Valid @RequestBody AmountRequest amount) {
-        return transactionService.processAmount(amount.getAmount());
+        return transactionService.processAmount(amount);
     }
 
 }

@@ -5,10 +5,13 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.Value;
 
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 @Value
 public class ResultResponse {
-    @NotNull
+    @NotBlank
     Result result;
+    @NotBlank
+    String info;
 }
