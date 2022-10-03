@@ -32,6 +32,7 @@ public class UserController {
     User changeRole(@Valid @RequestBody ChangeRoleRequest changeRoleRequest) {
         return userService.changeRole(changeRoleRequest.getUsername(), changeRoleRequest.getRole());
     }
+
     @PreAuthorize("hasRole('ADMINISTRATOR')")
     @PutMapping("/access")
     Map<String, String> changeAccess(@Valid @RequestBody ChangeAccessRequest changeAccessRequest) {

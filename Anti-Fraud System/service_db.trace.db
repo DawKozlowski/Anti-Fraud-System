@@ -1,0 +1,9 @@
+2022-10-02 23:23:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRANSACTIONS" not found; SQL statement:
+SELECT * FROM transactions WHERE number = ? AND date >= ? AND date < ? [42102-214]
+2022-10-02 23:23:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRANSACTIONS" not found; SQL statement:
+SELECT * FROM transactions WHERE number = ? AND date >= ? AND date < ? [42102-214]
+2022-10-02 23:24:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TRANSACTIONS" not found; SQL statement:
+SELECT * FROM transactions WHERE number = ? AND date >= ? AND date < ? [42102-214]
